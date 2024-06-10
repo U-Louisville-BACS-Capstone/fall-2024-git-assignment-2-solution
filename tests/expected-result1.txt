@@ -1,3 +1,2 @@
-Welcome to the [not-so] random number calculator!
-Subtracting!
-The result is -135
+INFO: Welcome to the [not-so] random number calculator!
+INFO: The result is -135
