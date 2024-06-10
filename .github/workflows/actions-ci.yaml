@@ -17,3 +17,8 @@ jobs:
         run: |
           ./calculator.py > test1.txt
           diff test1.txt tests/expected-result1.txt
+
+      - name: Test debug
+        run: |
+          ./calculator.py --debug > test2.txt
+          diff test2.txt tests/expected-result2.txt
