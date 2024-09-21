@@ -22,3 +22,11 @@ jobs:
         run: |
           ./calculator.py --debug > test2.txt
           diff test2.txt tests/expected-result2.txt
+
+      - name: Test with different seeds
+        run: |
+          touch test3.txt
+          for i in $(seq 100); do
+              ./calculator.py --seed $i --debug >> test3.txt
+          done
+          diff test3.txt tests/expected-result3.txt
